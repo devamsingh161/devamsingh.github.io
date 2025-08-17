@@ -1,70 +1,131 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deovam Singh - Life Long Learner</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply the Inter font family as the base */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom style for the left panel's background image */
+        .bg-panel {
+            background-image: url('https://s7ap1.scene7.com/is/image/incredibleindia/om-beach-gokarna-karnataka-city-ff?qlt=82&ts=1726720884483');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom font for the main greeting title */
+        .font-times {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
 
-<html>
-	<head>
-		<title>Deovam Singh</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/anime.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-		<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#FFFFFF">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-4RJ9RN1K5H"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
+    <!-- Main container -->
+    <div class="min-h-screen flex flex-col lg:flex-row">
 
-			  gtag('config', 'G-4RJ9RN1K5H');
-			</script>
-	</head>
-	<body class="is-preload">
-		<div class="se-pre-con"></div>
+        <!-- Left Panel (Image and Name) -->
+        <div class="lg:w-2/5 w-full bg-panel text-white relative flex flex-col items-center justify-center p-8 h-64 lg:h-screen lg:fixed">
+            <!-- Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            
+            <div class="relative z-10 text-center">
+                <!-- Profile Picture -->
+                <img 
+                    src="https://lh3.googleusercontent.com/a/ACg8ocKA_3zOrzsoO9gp87YypGQ7SMGjjRa3I8cCTp15WhSHy4sEaVvY=s576-c-no" 
+                    alt="Deovam Singh" 
+                    class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-white shadow-lg"
+                    onerror="this.onerror=null; this.src='https://placehold.co/150x150/cccccc/333333?text=Error';"
+                >
+                <!-- Greeting Text -->
+                <h2 class="text-3xl md:text-4xl font-bold mt-6 font-times">Hi! I'm Deovam Singh.</h2>
+            </div>
+        </div>
 
+        <!-- Right Panel (Content) -->
+        <main class="lg:w-3/5 w-full lg:ml-[40%] p-8 sm:p-12 md:p-16">
+            <div class="max-w-3xl mx-auto">
+                
+                <!-- Introduction Section -->
+                <section class="mb-12">
+                    <h1 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+                        I'm an Educator, Astronomy enthusiast from India working in Bhutan.
+                    </h1>
+                    <div class="space-y-4 text-lg text-slate-400 leading-relaxed">
+                        <p>
+                            I'm passionate about technology and science, and I'm always looking for new challenges to tackle. I enjoy learning how things work, from complex code to the vastness of space.
+                        </p>
+                        <p>
+                           My goal is to use my skills in problem-solving and analysis to contribute to meaningful projects. I'm particularly interested in fields where I can apply data analysis and programming. My interests also span topics like machine learning, physics, and software development.
+                        </p>
+                        <p>
+                            Currently, I'm focused on building my foundational knowledge and working on personal projects to expand my skills.
+                        </p>
+                    </div>
+                </section>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="WhatsApp Image 2025-08-16 at 19.50.58.jpeg" alt="" /></a>
-					<h1><strong>Hi! I'm Deovam Singh.</strong></h1>
-				</div>
-			</header>
+                <!-- CV Button -->
+                <section class="mb-16">
+                    <a href="https://drive.google.com/file/d/1DzgODhF8hM0ZgxtmN5hl2XjTtlK4qU5S/view?usp=sharing" class="inline-block bg-transparent hover:bg-sky-900 text-sky-300 font-semibold py-3 px-8 border border-sky-400 hover:text-white rounded-lg shadow-sm transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+                        View CV
+                    </a>
+                </section>
 
-		<!-- Main -->
-			<div id="main">
+                <!-- Projects Section -->
+                <section>
+                    <h3 class="text-2xl font-bold text-white mb-2">See below for some of my recent projects!</h3>
+                    <p class="text-slate-600 mb-8">Click on the images for more information.</p>
 
-				<!-- One -->
-					<section id="one">
-<h2 class="ml3">
-    <span class="letters">I'm a PhD candidate at the University of Maryland, College Park.</span>
-</h2>
-						<br>
+                    <!-- Project Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        
+                        <!-- Project Card -->
+<a href="https://drive.google.com/file/d/1RSYglKujSyfEi5HqjsfkX43klBuGYrUD/view?usp=sharing" class="group block bg-slate-800 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:shadow-sky-800/40 hover:scale-105">
+    <img 
+        src="https://i.imgur.com/zbzESpK.jpeg" 
+        alt="Project Panoptes" 
+        class="w-full h-48 object-cover"
+    >
+    <div class="p-6">
+        <h4 class="font-bold text-xl text-white mb-2">Project Panoptes</h4>
+        <p class="text-slate-400">Designed and built this personal portfolio using HTML and Tailwind CSS.</p>
+    </div>
+</a>
+                        
+                        <!-- Project Card 2 -->
+                        <a href="#" class="group block bg-slate-800 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:shadow-sky-800/40 hover:scale-105">
+                            <img 
+                                src="https://placehold.co/600x400/f97316/ffffff?text=Project+Two" 
+                                alt="Project Two" 
+                                class="w-full h-48 object-cover"
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';"
+                            >
+                            <div class="p-6">
+                                <h4 class="font-bold text-xl mb-2">Physics Simulation</h4>
+                                <p class="text-slate-600">A small project to simulate projectile motion using JavaScript.</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Add more project cards as needed -->
 
-						<p> I study exoplanet atmospheres, and I generally seek to answer: how does gas move and change in hot gas giants? </p>
+                    </div>
+                </section>
 
-						<p> I'm trained as a theorist, but I spend the majority of my time "staying close to the data": making predictions,
-							interpreting observations, and as of late developing inference tools. In the coming years, I will apply these tools to data from <a href="https://science.nasa.gov/mission/webb/">JWST</a> and the <a href="https://www.eso.org/public/teles-instr/paranal-observatory/vlt/">VLT</a>.
-							My interests also span magnetic fields, photochemistry, and code optimization.</p>
+            </div>
+        
 
-						<p>Currently, I'm most excited about inferring "3D effects" from hot Jupiters and cross-correlating against JWST data.</p>
+    </div>
 
-
-						<ul class="actions"><center>
-							<li><a href="PDFs/CV_Savel.pdf" class="button">CV</a></li>
-						</center></ul>
-    </p>
-  </div>
 </body>
 </html>
